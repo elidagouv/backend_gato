@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "05161be6-ee5f-471b-899b-3e7d86facce4",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26131322"
+	},
+	"item": [
+		{
+			"name": "Criação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"bola\",\r\n    \"age\": 30,\r\n    \"description\": \"redonda\",\r\n    \"vaccinated\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/gatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/gatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"gatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/gatos/bola",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Rocket\",\r\n    \"age\": 1,\r\n    \"description\": \"white and black\",\r\n    \"vaccinated\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/gatos/bola",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"gatos",
+						"bola"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/gatos/Rocket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/gatos/Rocket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"gatos",
+						"Rocket"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
